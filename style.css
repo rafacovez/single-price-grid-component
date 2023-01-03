@@ -24,6 +24,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--light-gray);
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5 {
@@ -82,17 +83,20 @@ img, picture, svg, video {
 
 .join-our-community > h1 {
     color: var(--cyan);
+    font-size: calc(var(--font-size) * 1.6);
     font-weight: var(--font-bold);
 }
 
-.join-our-community > h2 {
+.join-our-community > .guarantee {
     color: var(--bright-yellow);
+    font-size: calc(var(--font-size) * 1.4);
     font-weight: var(--font-bold);
     margin: 2rem 0 1rem 0;
 }
 
-.join-our-community > p {
+.join-our-community > .access {
     color: var(--grayish-blue);
+    font-size: calc(var(--font-size) * 1);
     font-weight: var(--font-bold);
 }
 
@@ -100,7 +104,7 @@ img, picture, svg, video {
     background-color: var(--cyan);
 }
 
-.monthly-subscription > h1 {
+.monthly-subscription > h2 {
     color: var(--white);
     font-size: calc(var(--font-size) * 1.6);
     font-weight: var(--font-bold);
@@ -124,7 +128,7 @@ img, picture, svg, video {
     font-weight: var(--font-regular);
 }
 
-.monthly-subscription > p {
+.monthly-subscription > .access {
     color: var(--white);
     margin: 0 0 2rem 0;
 }
@@ -161,7 +165,7 @@ img, picture, svg, video {
     opacity: 0.8;
 }
 
-.why-us > h1 {
+.why-us > h2 {
     font-size: calc(var(--font-size) * 1.6);
     font-weight: var(--font-bold);
     color: var(--white);
@@ -190,11 +194,10 @@ img, picture, svg, video {
     color: var(--cyan);
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1000px) {
     body {
         display: grid;
         place-items: center;
-        height: 100vh;
     }
 
     .modal {
